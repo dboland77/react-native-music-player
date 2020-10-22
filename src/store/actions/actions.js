@@ -1,7 +1,4 @@
-import { COUNTER_CHANGE } from "../../constants";
-export function changeCount(count) {
-  return {
-    type: COUNTER_CHANGE,
-    payload: count,
-  };
-}
+export const LOAD_FILE = 'LOAD_FILE';
+export const SET_IS_PLAYING = 'PLAYING';
+export const SET_PLAYBACK_INSTANCE = 'SET_PLAYBACK_INSTANCE';
+export const SET_INDEX = 'SET_INDEX';

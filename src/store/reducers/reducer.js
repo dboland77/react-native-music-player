@@ -1,4 +1,4 @@
-import { LOAD } from "../constants/index";
+import * as actionTypes from "../actions/actions";
 
 const initialState = {
   isPlaying: false,
@@ -10,14 +10,21 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'LOAD':
+    case actionTypes.LOAD_FILE:
       return {
-        ...state
+        ...state,
       };
-      case 'PLAYING':
-        return {
-          isPlaying: !state.isPlaying
-        };
+    case actionTypes.SET_IS_PLAYING:
+      return !state.isPlaying;
+    case actionTypes.SET_PLAYBACK_INSTANCE:
+      return {
+        isBuffering: action.isBuffering,
+      };
+    case actionTypes.SET_INDEX:
+      return {
+        ...state,
+        currentIndex: action,
+      };
     default:
       return state;
   }

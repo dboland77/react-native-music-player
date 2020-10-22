@@ -1,24 +1,25 @@
-export default const Playlist = [
+const audioBookPlaylist = [
   {
-    title: 'Hamlet - Act I',
-    author: 'William Shakespeare',
-    source: 'Librivox',
-    uri:
-      'https://ia800204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act1_shakespeare.mp3',
-    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg'
+    title: "12 Variations for Cello and Piano",
+    author: "Ludwig van Beethoven",
+    source: "Played by: Reiner Hochmuth",
+    uri: "./assets/audio/Beethoven.mp3",
+    imageSource: "./assets/image/Beethoven.jpg",
   },
   {
-    title: 'Hamlet - Act II',
-    author: 'William Shakespeare',
-    source: 'Librivox',
-    uri:
-      'https://ia600204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act2_shakespeare.mp3',
-    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg'
+    title: "Nocturne",
+    author: "Pyotr Tchaikovsky",
+    source: "Played by: Reiner Hochmuth",
+    uri: "./assets/audio/Tchaikovsky.mp3",
+    imageSource: "./assets/image/Tchaikovsky.jpg",
   },
   {
-    title: 'Hamlet - Act III',
-    author: 'William Shakespeare',
-    source: 'Librivox',
-    uri: 'http://www.archive.org/download/hamlet_0911_librivox/hamlet_act3_shakespeare.mp3',
-    imageSource: 'http://www.archive.org/download/LibrivoxCdCoverArt8/hamlet_1104.jpg'
-  }]
+    title: "Prayer",
+    author: "Ernest Bloch",
+    source: "Played by: Reiner Hochmuth",
+    uri: "./assets/audio/Bloch.mp3",
+    imageSource: "./assets/image/Bloch.jpg",
+  },
+];
+
+export default audioBookPlaylist;

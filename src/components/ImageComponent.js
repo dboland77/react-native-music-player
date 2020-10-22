@@ -5,7 +5,7 @@ const ImageComponent = ({ navigation }, props) => {
   return (
     <View>
       <Image
-        source={require("../../assets/Image/Beethoven.jpg")}
+        source={require("../../assets/image/Beethoven.jpg")}
         style={styles.image}
         resizeMode="contain"
       />
@@ -17,11 +17,11 @@ export default ImageComponent;
 
 const styles = StyleSheet.create({
   image: {
-   borderWidth:1,
-   borderRadius:75,
+    borderWidth: 1,
+    borderRadius: 75,
     width: 150,
     height: 150,
-    alignSelf:'center',
-    marginBottom:40
+    alignSelf: "center",
+    marginBottom: 40,
   },
 });

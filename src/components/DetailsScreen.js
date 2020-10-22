@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, Text, View, Button } from "react-native";
 import ProgressSlider from "./ProgressSlider";
 import ImageComponent from "./ImageComponent";
-import { connect } from "react-redux";
 import { Ionicons } from "@expo/vector-icons";
 
 function DetailsScreen({ navigation }, props) {
@@ -49,15 +48,4 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapStateToProps = state => {
-  return {
-    isPlaying: state.isPlaying,
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return{
-    setPlaying: () => dispatch({type: 'PLAYING'})
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(DetailsScreen);
+export default DetailsScreen;
