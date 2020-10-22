@@ -1,17 +1,27 @@
 import React from "react";
-import { Image, View } from "react-native";
+import { StyleSheet, Image, View } from "react-native";
 
-const ImageView = () => {
+const ImageComponent = ({ navigation }, props) => {
   return (
     <View>
-      <ImageComponent
-        source={{
-          uri:
-            "https://upload.wikimedia.org/wikipedia/commons/6/6f/Beethoven.jpg",
-        }}
+      <Image
+        source={require("../../assets/Image/Beethoven.jpg")}
+        style={styles.image}
+        resizeMode="contain"
       />
     </View>
   );
 };
 
-export default ImageView;
+export default ImageComponent;
+
+const styles = StyleSheet.create({
+  image: {
+   borderWidth:1,
+   borderRadius:75,
+    width: 150,
+    height: 150,
+    alignSelf:'center',
+    marginBottom:40
+  },
+});
